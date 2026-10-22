@@ -10,7 +10,11 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('demo');
 
-  unusedMethod() {
-    const unusedVariable = 'hello';
+  testBadCode(password: string) {
+  const hardcodedPassword = "admin123";
+
+  if (password == "test") {
+    console.log("Password is " + hardcodedPassword);
   }
+}
 }
