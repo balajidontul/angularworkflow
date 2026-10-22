@@ -10,11 +10,24 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('demo');
 
+  test(value: number) {
+  if (value > 10) {
+    console.log("A");
+  }
+
+  if (value > 10) {
+    console.log("B");
+  }
+}
+
   testBadCode(password: string) {
   const hardcodedPassword = "admin123";
 
   if (password == "test") {
     console.log("Password is " + hardcodedPassword);
+    
   }
+
+  
 }
 }
